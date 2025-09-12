@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             KotlinBasicsTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Scaffold( modifier = Modifier.fillMaxSize() ) { innerPadding ->
                     Greeting(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)
@@ -27,7 +27,19 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+        week02Variables()
     }
+}
+
+private fun week02Variables(){
+    println("week 02 : Variables")
+
+    val courseName = "Mobile Programming"
+    //courseName="IoT Programming"은 error
+
+    var week=2
+    println("Course : $courseName")
+    println("week : $week")
 }
 
 @Composable
