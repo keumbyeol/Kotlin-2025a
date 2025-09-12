@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.kotlinbasics.ui.theme.KotlinBasicsTheme
+import kotlinx.serialization.descriptors.PrimitiveKind
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,14 +33,32 @@ class MainActivity : ComponentActivity() {
 }
 
 private fun week02Variables(){
-    println("week 02 : Variables")
+//    println("week 02 : Variables")
+//
+//    val courseName = "Mobile Programming"
+//    //courseName="IoT Programming"은 error
+//
+//    var week=2
+//    println("Course : $courseName")
+//    println("week : $week")
 
-    val courseName = "Mobile Programming"
-    //courseName="IoT Programming"은 error
+    println("Kotlin Variables ==")
+    val name ="Android"
+    var version=8
 
-    var week=2
-    println("Course : $courseName")
-    println("week : $week")
+    println("Hello $name $version")
+
+    val age: Int = 21
+    val height: Double=162.1
+    val isStudent: Boolean=true
+
+    println("Age : $age height : $height Student : $isStudent")
+
+    var nickname: String?=null
+    nickname = "mirae"
+
+    println("Nickname : $nickname ${nickname?.length}")
+
 }
 
 @Composable
