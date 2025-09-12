@@ -81,6 +81,8 @@ private fun week02Functions(){
 
     println(greet("Kotlin"))
     println("Sum :${add(5, -71)}")
+    introduce("kim", 7)
+    introduce("Park")
 
 }
 
