@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.appweek11"
-        minSdk = 27
+        minSdk = 26
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -35,6 +35,10 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -45,17 +49,18 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
 
-    //recyclerView
+    // Recyclerview
     implementation("androidx.recyclerview:recyclerview:1.4.0")
 
-    //room database
+    // Room database
     val roomVersion = "2.8.3"
     implementation("androidx.room:room-runtime:$roomVersion")
     implementation("androidx.room:room-ktx:$roomVersion")
     kapt("androidx.room:room-compiler:$roomVersion")
 
-    //Coroutine
+    // Coroutine
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
