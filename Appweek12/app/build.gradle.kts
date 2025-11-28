@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "com.appweek12"
-        minSdk = 27
+        minSdk = 26
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -33,7 +33,6 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
-
     buildFeatures{
         viewBinding = true
     }
@@ -46,6 +45,15 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+
+    // ViewModel, StateFlow
+    val lifecycleVersion = "2.7.0"
+    val coroutineVersion = "1.7.3"
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:${lifecycleVersion}")
+    implementation("androidx.activity:activity:1.8.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:${coroutineVersion}")
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
