@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    namespace = "com.appaweek14"
+    namespace = "com.appweek14"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.appaweek14"
-        minSdk = 27
+        applicationId = "com.appweek14"
+        minSdk = 26
         targetSdk = 36
         versionCode = 1
         versionName = "1.0"
@@ -40,7 +40,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -50,13 +49,12 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
 
-    //coroutines
+    // Coroutines
     implementation(libs.kotlinx.coroutines.android)
 
-    //retrofit
+    // Retrofit
     implementation(libs.retrofit.core)
     implementation(libs.retrofit.converter.gson)
-
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
