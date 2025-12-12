@@ -1,4 +1,4 @@
-package com.appaweek14
+package com.appweek14
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,8 +10,8 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.appaweek14.data.RetrofitClient
-import com.appaweek14.data.User
+import com.appweek14.data.RetrofitClient
+import com.appweek14.data.User
 import kotlinx.coroutines.launch
 
 class MainActivity : ComponentActivity() {

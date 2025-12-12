@@ -1,4 +1,4 @@
-package com.appaweek14.ui.theme
+package com.appweek14.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

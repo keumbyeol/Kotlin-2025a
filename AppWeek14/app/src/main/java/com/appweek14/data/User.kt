@@ -1,4 +1,4 @@
-package com.appaweek14.data
+package com.appweek14.data
 
 data class User (
 

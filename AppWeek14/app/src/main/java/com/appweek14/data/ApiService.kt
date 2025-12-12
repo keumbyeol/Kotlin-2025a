@@ -1,4 +1,4 @@
-package com.appaweek14.data
+package com.appweek14.data
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -12,11 +12,11 @@ interface JsonPlaceholderApi {
     suspend fun getUsers(): List<User>
 }
 
+//Singleton
 object RetrofitClient{
     private const val BASE_URL ="https://jsonplaceholder.typicode.com/"
 
 
-    //Singleton
     val api: JsonPlaceholderApi by lazy{
         Retrofit.Builder()
             .baseUrl(BASE_URL)
